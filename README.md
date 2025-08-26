@@ -9,7 +9,7 @@
 
 A full-stack React application for analyzing, previewing, and comparing Markdown documents.
 
-Features a live editor with diff visualization, AI-powered analysis, and a toggleable subscription model with Firebase authentication and Stripe integration.
+Features a live editor with diff visualization, AI-powered analysis, and a toggleable subscription model with Firebase authentication and Stripe integration (**Note:** Subscriptions and payments are currently disabled).
 
 ## Features
 
