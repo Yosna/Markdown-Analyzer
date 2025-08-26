@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "markdown-analyzer",
+    "prod": "markdown-analyzer",
+    "dev": "markdown-analyzer-dev"
+  },
+  "targets": {},
+  "etags": {}
+}

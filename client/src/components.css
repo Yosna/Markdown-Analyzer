@@ -1,0 +1,88 @@
+/* Component-specific styles */
+.clickable {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-default);
+  color: var(--text-primary);
+  @apply flex cursor-pointer items-center justify-center rounded border p-2 text-sm;
+  transition: all 0.2s ease;
+}
+
+.clickable:hover {
+  background-color: var(--bg-hover);
+  border-color: var(--border-accent);
+}
+
+.clickable:active {
+  background-color: var(--bg-accent);
+  transform: translateY(1px);
+}
+
+.clickable:focus {
+  outline: none;
+  border-color: var(--border-accent);
+}
+
+.clickable:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.clickable:disabled:active {
+  background-color: var(--bg-secondary);
+  transform: none;
+}
+
+/* Tab styles */
+.input-tabs .react-tabs__tab,
+.output-tabs .react-tabs__tab {
+  color: var(--text-secondary);
+  border-color: var(--border-default);
+  background-color: var(--bg-primary);
+  transition: all 0.2s ease;
+}
+
+.input-tabs .react-tabs__tab:hover,
+.output-tabs .react-tabs__tab:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-hover);
+}
+
+.input-tabs .react-tabs__tab--selected,
+.output-tabs .react-tabs__tab--selected {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+}
+
+.input-tabs .react-tabs__tab--selected::after,
+.output-tabs .react-tabs__tab--selected::after {
+  background: none;
+}
+
+.input-tabs,
+.output-tabs {
+  @apply flex h-full flex-col;
+}
+
+.input-tabs .react-tabs__tab-list,
+.output-tabs .react-tabs__tab-list {
+  @apply flex-shrink-0;
+}
+
+.input-tabs .react-tabs__tab-panel,
+.output-tabs .react-tabs__tab-panel {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-default);
+  @apply max-w-none flex-1 overflow-auto rounded border;
+}
+
+/* Modal styles */
+.modal {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  @apply fixed top-1/2 left-1/2 z-999 -translate-x-1/2 -translate-y-1/2 transform rounded-lg p-6 shadow-lg;
+}
+
+.modal-close {
+  @apply absolute top-2 right-2 rounded p-1 text-xl leading-none font-bold transition-colors;
+}

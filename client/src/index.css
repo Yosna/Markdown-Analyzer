@@ -1,0 +1,153 @@
+@import 'tailwindcss';
+@import './themes.css';
+@import './components.css';
+@plugin '@tailwindcss/typography';
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-accent);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--bg-primary);
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-default) var(--bg-primary);
+}
+
+/* Typography styles */
+.prose {
+  line-height: 1.33;
+}
+
+.prose details {
+  background-color: var(--prose-code-background);
+  color: var(--prose-code-text);
+}
+
+.prose pre,
+.prose code {
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+  color: var(--text-primary);
+  background-color: var(--prose-code-background);
+  border-color: var(--prose-code-background);
+  border-width: 2px 4px;
+  border-radius: 0.25rem;
+  line-height: 1.33;
+  margin: 0 auto;
+}
+
+/* Remove extra padding for language-specific code blocks */
+.prose pre:has(code[class*='language-']) {
+  padding: 0;
+}
+
+.prose code::before,
+.prose code::after {
+  content: none;
+}
+
+.prose a {
+  color: #3b82f6;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.prose a:hover {
+  color: var(--text-heading);
+}
+
+.prose a:visited {
+  color: #3b82f6;
+  opacity: 0.8;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6,
+.prose strong {
+  color: var(--text-primary);
+}
+
+.prose p,
+.prose li {
+  color: var(--text-primary);
+}
+
+.prose h1::after,
+.prose h2::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-default);
+  margin: 0.5em auto;
+}
+
+.prose img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img[src^="https://img.shields.io/"]
+{
+  display: inline-block;
+  margin: 0;
+}
+
+/* Code editor base styles */
+#code-editor {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-code);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* Utility classes */
+.sr-only {
+  @apply absolute top-auto -left-[10000px] h-px w-px overflow-hidden;
+}
