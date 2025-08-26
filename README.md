@@ -1,5 +1,12 @@
 # Markdown Analyzer
 
+[![Live App](https://img.shields.io/badge/Live_App-web.app-blue)](https://markdown-analyzer.web.app)
+[![API](https://img.shields.io/badge/API-onrender.com-9cf)](https://markdown-analyzer.onrender.com/api/health)
+[![Firebase Hosting](https://img.shields.io/badge/Hosting-Firebase-orange)](https://firebase.google.com/docs/hosting)
+[![Backend](https://img.shields.io/badge/Backend-Render-00c7b7)](https://render.com/)
+
+> **Links:** [Live app](https://markdown-analyzer.web.app) – [API health](https://markdown-analyzer.onrender.com/api/health)
+
 A full-stack React application for analyzing, previewing, and comparing Markdown documents.
 
 Features a live editor with diff visualization, AI-powered analysis, and a toggleable subscription model with Firebase authentication and Stripe integration.
