@@ -130,10 +130,9 @@ Test suite achieves **100% statements, branches, functions, and lines** across b
 
 1. Set up Firebase project + Firestore + Auth providers (Google, GitHub).
 2. Enable Stripe Payments extension in Firebase.
-3. Add Firestore config doc:
+3. Add Firestore config/payments doc:
 
 ```json
-// /config/payments
 {
   "enabled": false,
   "priceId": "price_xxx"
