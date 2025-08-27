@@ -23,7 +23,7 @@ Features a live editor with diff visualization, AI-powered analysis, and a toggl
 ### UI & Theming
 
 - **Dynamic theme system** with 6 color schemes:
-  - Ligh
+  - Light
   - Dark
   - Sunset
   - Midnight
