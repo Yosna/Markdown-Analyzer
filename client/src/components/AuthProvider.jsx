@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { query, where, collection, onSnapshot, doc } from 'firebase/firestore';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth, db } from '../lib/firebase';
-import { AuthCtx } from '../utils/useAuth';
+import { AuthCtx } from '../hooks/useAuth';
 
 /**
  * Authentication provider component that manages user state and subscription data.

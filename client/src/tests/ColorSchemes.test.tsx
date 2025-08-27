@@ -3,11 +3,11 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { vi } from 'vitest';
 import ColorSchemes from '../components/ColorSchemes';
 
-vi.mock('../utils/useTheme', () => ({
+vi.mock('../hooks/useTheme', () => ({
   useTheme: vi.fn(),
 }));
 
-import { useTheme } from '../utils/useTheme';
+import { useTheme } from '../hooks/useTheme';
 const mockUseTheme = vi.mocked(useTheme);
 
 describe('ColorSchemes', () => {

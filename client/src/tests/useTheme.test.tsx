@@ -1,6 +1,6 @@
 import { renderHook, act } from '@testing-library/react';
 import { vi } from 'vitest';
-import { useTheme, getThemeProperty } from '../utils/useTheme';
+import { useTheme, getThemeProperty } from '../hooks/useTheme';
 import { localStorageMock } from './mocks.ts';
 
 // Mock getComputedStyle

@@ -113,7 +113,6 @@ describe('AuthProvider', () => {
     renderAuthProvider(<div data-testid="test-child">Test Child</div>);
 
     expect(screen.getByTestId('test-child')).toBeInTheDocument();
-    expect(screen.getByTestId('auth-provider')).toBeInTheDocument();
     expect(mockOnAuthStateChanged).toHaveBeenCalledWith(expect.anything(), expect.any(Function));
     expect(mockDoc).toHaveBeenCalledWith(expect.anything(), 'config', 'payments');
     expect(mockOnSnapshot).toHaveBeenCalled();

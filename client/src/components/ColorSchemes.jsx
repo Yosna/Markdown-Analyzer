@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTheme } from '../utils/useTheme';
+import { useTheme } from '../hooks/useTheme';
 
 /**
  * ColorSchemes component for theme selection and management.

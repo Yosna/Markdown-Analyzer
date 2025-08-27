@@ -1,4 +1,4 @@
-import { useAuth } from '../utils/useAuth';
+import { useAuth } from '../hooks/useAuth';
 
 /**
  * UserCard component for displaying user profile and subscription status.

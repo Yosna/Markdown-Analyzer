@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import { describe, test, expect, vi, beforeEach, afterEach } from 'vitest';
 import '@testing-library/jest-dom';
 import UserPanel from '../components/UserPanel';
-import { AuthCtx } from '../utils/useAuth';
+import { AuthCtx } from '../hooks/useAuth';
 
 const AuthContext = AuthCtx as any;
 

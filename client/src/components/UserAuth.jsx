@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { auth } from '../lib/firebase';
 import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup } from 'firebase/auth';
 import { AUTH_ERRORS } from '../utils/constants';
-import { useAuth } from '../utils/useAuth';
+import { useAuth } from '../hooks/useAuth';
 import linkCredentials from '../utils/linkCredentials';
 
 /**
